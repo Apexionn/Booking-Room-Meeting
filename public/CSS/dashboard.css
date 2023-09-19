@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Navbar */
+
+#digital-clock {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    margin-top: 32px;
+}
+
+li a {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+li .user img{
+    width: 35px;
+    height: 35px;
+    margin-top: -15px;
+    margin-right: 45px;
+}
+
+.logo img{
+    float: left;
+    width: 150px ;
+    height: 70px;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+/* Head */
+
+.header{
+    margin-left: -50px;
+}
+
+h1{
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 145px;
+    font-size: 40px;
+    padding: 20px 20px;
+}
+p{
+    position: absolute;
+    margin-top: 267px;
+    margin-left: 145px;
+    color: #8E8E8E;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+/* Background */
+
+.elements {
+    position: absolute;
+}
+
+.bgsatu svg {
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    overflow-x: hidden;
+}

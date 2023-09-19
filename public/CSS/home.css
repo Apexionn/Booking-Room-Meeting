@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Navbar */
+
+#digital-clock {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: -100px;
+    margin-top: 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    margin-top: 32px;
+    margin-right: 45px;
+}
+
+li a {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.acc, .bookings, .logout{
+    color: white;
+}
+
+li .user {
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-top: -30px;
+    margin-right: -10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: 70px;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+/* Head */
+
+.header{
+    margin-left: -50px;
+}
+
+h1{
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 145px;
+    font-size: 40px;
+    padding: 20px 20px;
+}
+
+p{
+    position: absolute;
+    margin-top: 267px;
+    margin-left: 145px;
+    color: #8E8E8E;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+/* Popover styling */
+
+a {
+    text-decoration: none;
+}
+
+.popover ul {
+    width: 150px;
+    font-size: 14px;
+    padding: 10px;
+    z-index: 50;
+}
+
+.popover ul li .content {
+    z-index: 90;
+    position: absolute;
+    width: 150px;
+    top: 100px;
+    right: 0px;
+    background: #8E8E8E;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(10px);
+    z-index: 50;
+}
+
+.popover ul li .content::before {
+    z-index: -85;
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 102px;
+    bottom: 110px;
+    background: #8E8E8E;
+    transform: rotate(45deg);
+}
+
+.popover ul li:hover .content {
+    z-index: 2;
+    visibility: visible;
+    opacity: 100%;
+    transform: translateX(-50%) translateY(0px);
+    z-index: 50;
+}
+
+.popover ul li:hover .content a:hover{
+    z-index: 3;
+    background-color: #363636;
+    transition: 0.5s;
+    z-index: 50;
+}
+
+/* Background */
+
+.elements {
+    position: absolute;
+}
+
+.bgsatu svg {
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    overflow-x: hidden;
+}

@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Navbar */
+
+#digital-clock {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    margin-top: 32px;
+}
+
+li a {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li .user img{
+    width: 35px;
+    height: 35px;
+    margin-top: -15px;
+    margin-right: 45px;
+    border-radius: 50%;
+}
+
+.logo img{
+    float: left;
+    width: 150px ;
+    height: 70px;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.form2{
+    width: 450px;
+    height: 500px;
+    margin-top: 15px;
+    margin-left: 150px;
+    z-index: 30;
+    position: absolute;
+    background: white;
+    box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.heading2{
+    margin-top: 40px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.form{
+    width: 450px;
+    height: 500px;
+    margin-top: 15px;
+    margin-left: 800px;
+    z-index: 30;
+    position: absolute;
+    background: white;
+    box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.heading1{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input{
+    text-indent: 2px;
+}
+
+.add1{
+    margin-left: 80px;
+}
+
+input[name="name"]{
+    margin-left: 80px;
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+.add2{
+    margin-left: 140px;
+}
+
+input[name="department"]{
+    margin-top:10px ;
+    margin-left: 40px;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.add3{
+    margin-left: 120px;
+}
+
+input[name="room"]{
+    margin-left: 65px;
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+.add4{
+    margin-left: 80px;
+}
+
+input[name="date"]{
+    margin-top:10px ;
+    margin-left: 80px;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.add5{
+    margin-left: 150px;
+}
+
+input[type="time"]{
+    margin-left: 40px;
+    width: 65px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+input[name="end_time"]{
+    margin-left: 10px;
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.add6{
+    margin-left: 175px;
+}
+
+input[name="description"]{
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 60px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+button.batal{
+    margin-left: 250px;
+    width: 100px;
+    height: 30px;
+    background-color: #FFA825;
+    border-radius: 10px;
+    border: 1px solid #FFA825;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.batal:hover{
+    transform: scale(1.1);
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+    background-color: #F6C445;
+    border: 1px solid #F6C445;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+
+/* Tema Warna Patternnya (Biru - Kuning - Kuning - Biru) */
+
+/* .room:nth-child(4n-3) {
+    border-radius: 13px;
+    background: #2B3DB7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.room:nth-child(4n-2) {
+    border-radius: 13px;
+    background: #2B3DB7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.room:nth-child(4n-1) {
+    border-radius: 13px;
+    background: #FBB956;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.room:nth-child(4n) {
+    border-radius: 13px;
+    background: #FBB956;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    margin-top: 10px;
+} */
+
+/* .room:nth-child(4n-3):hover {
+    background: #1b2773;
+}
+
+.room:nth-child(4n-2):hover {
+    background: #1b2773;
+}
+
+.room:nth-child(4n-1):hover {
+    background: #be8c42;
+}
+
+.room:nth-child(4n):hover {
+    background: #be8c42;
+} */
+
+.room:nth-child(odd) {
+    border-radius: 13px;
+    background: #FBB956;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.room:nth-child(even) {
+    border-radius: 13px;
+    background: #2B3DB7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.room:nth-child(odd):hover {
+    background: #be8c42;
+}
+
+.room:nth-child(even):hover {
+    background: #1b2773;
+}
+
+.room img{
+    width: 180px;
+    height: 90px;
+    position: relative;
+    border-radius: 6px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.room b{
+    right: 39px;
+    top: 10px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.selected-room {
+    border: 2px solid blue;
+}
+
+svg {
+    margin-left: 50px;
+    position: relative;
+    bottom: 90px;
+}
+
+/* .room{
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+ .container1 {
+    width: 1310px;
+    height: 150px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+    overflow-y: hidden;
+    overflow-x: auto;
+} */
+
+
+/* CSS for container 1 */
+.container1 {
+    width: 1250px;
+    height: 180px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.room {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+  /* CSS untuk container 2 */
+.container2 {
+    width: 30%;
+    height: 400px;
+    float: left;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.Data-table{
+    margin-top: 20px;
+}
+
+.Data-table th{
+    width: 200px;
+}
+
+.Data-table td{
+    width: 200px;
+}
+
+.first{
+    text-align: left;
+}
+
+.second{
+    text-align: center;
+}
+
+.booking-name {
+    text-align: left;
+}
+
+.booking-hour{
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    height: 200px;
+}
+
+  /* CSS untuk container 3 */
+.container3 {
+    width: 780px;
+    height: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 95px;
+    float: right;
+}
