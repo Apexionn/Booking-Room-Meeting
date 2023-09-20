@@ -201,21 +201,21 @@ class BookingController extends Controller
 
             $output = '<ul class="dropdown-menu">';
 
-            // Add booking names to autocomplete suggestions
+            // Menambahkan room id di sugesti autocomplete
             foreach ($roomid as $roomname) {
                 $output .= '<li><a class="dropdown-item" href="#">'.$roomname->name.'</a></li>';
             }
 
-            // Add booking names to autocomplete suggestions
+            // Menambahkan nama user id di sugesti autocomplete
             foreach ($names as $name) {
                 $output .= '<li><a class="dropdown-item" href="#">'.$name.'</a></li>';
             }
 
-            // Add booking dates to autocomplete suggestions
+            // Menambahkan tanggal booking id di sugesti autocomplete
             foreach ($dates as $date) {
                 $output .= '<li><a class="dropdown-item" href="#">'.$date.'</a></li>';
             }
-            // Add booking times to autocomplete suggestions
+            // Menambahkan waktu booking di sugesti autocomplete
             foreach ($times as $time) {
                 $output .= '<li><a class="dropdown-item" href="#">'.$time.'</a></li>';
             }

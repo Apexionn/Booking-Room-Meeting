@@ -86,7 +86,7 @@ Route::post('/cancelbooking/{id}', [ShowYourBookingsController::class, 'cancel']
     Route::get('/bookings', [BookingController::class,'index']);
     // Memilih Bookings yang di reject dan menampikan halaman form reject
     Route::get('/reject-form/{id}', [BookingController::class,'select']);
-    // Reject Bookingsss
+    // Reject Bookings
     Route::get('/reject-booking/{id}', [BookingController::class,'reject']);
 
 // Autocomplete
