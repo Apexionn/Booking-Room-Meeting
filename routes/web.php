@@ -47,7 +47,6 @@ Route::post('/store-booking', [BookingController::class, 'store'])->name('store.
 
 // Your Bookigs
 Route::get('/yourbookings/{id}', [ShowYourBookingsController::class, 'yourBookings'])->name('Allbookings');
-// Route::get('/cancel/{id}', [ShowYourBookingsController::class, 'cancel'])->name('cancelbookings');
 Route::post('/cancelbooking/{id}', [ShowYourBookingsController::class, 'cancel'])->name('cancelbooking');
 
 // Rooms Admin
